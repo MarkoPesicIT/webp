@@ -1,7 +1,7 @@
 body{
       margin: 0px;
       padding: 0;
-      background-color: rgb(230, 230, 230);
+      background-color: rgb(200, 200, 200);
 }
 
 header {
@@ -21,7 +21,6 @@ header {
 .cf:after {
       clear: both;
 }
-
 ul li a img {
       height: 14px;
 }
@@ -31,32 +30,32 @@ ul li a img {
       padding: 0;
       list-style: none;
 }
-
-
 .menu > li {
- background: #b80e0e;
- float: left;
- position: relative;
- transform: skewX(-35deg);
+  background: #b80e0e;
+  float: left;
+  position: relative;
+  transform: skewX(-35deg);
 }
 
 .menu a {
- display: block;
- color: #fff;
- text-transform: uppercase;
- text-decoration: none;
- font-family: Arial, Helvetica;
- font-size: 14px;
-}  
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}
 
-.menu li:hover {
- background: #e74c3c;
-}  
+.menu li:hover,
+.menu li:active {
+  background: #e74c3c;
+}
 
 .menu > li > a {
- transform: skewX(35deg);
- padding: 1em 2em;
+  transform: skewX(35deg);
+  padding: 1em 2em;
 }
+
 
 /* Dropdown */
 
@@ -73,12 +72,14 @@ ul li a img {
  margin-left: -100px;
  transform: skewX(35deg);
  transform-origin: left top;
+ 
 }
 
 .submenu li {
  background-color: #c03636;
  position: relative;
  overflow: hidden;  
+
 }      
 
 .submenu > li > a {
@@ -145,7 +146,9 @@ ul li a img {
  transform: skewX(-35deg) translateX(-15px);   
 }
 .novosti {
-      margin: 5vw;
+      margin-top: 8vh;
+      margin-left: 10vw;
+      margin-right: 10vw;
       border: 10px solid red;
       border-radius: 5vw;
       box-sizing: border-box; 
@@ -153,7 +156,7 @@ ul li a img {
   }
   
   .novosti hr {
-      border-width: 10px;
+      border-width: 4px;
       width: 95%;
       margin: 20px auto; 
       border-color: red;
@@ -162,22 +165,20 @@ ul li a img {
   
   
   .novosti h1 {
-      margin-top: 2vw;
       text-align: center;
       font-size: 2vw;
   }
   
   .novosti-section {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-      gap: 1.5vw;
+      grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+      gap: 1vw;
       margin: 2vw;
   }
   
   .novosti-card p{
-      margin-top: 1vw;
       font-weight:bolder;
-      font-size: 1.5vw;
+      font-size: 1vw;
   }
   .novosti-card {
       cursor: pointer;
@@ -197,12 +198,13 @@ ul li a img {
   }
   
   .novosti-card:hover p{
-      background: rgba(255, 0, 0, 0.35);
-      border-radius: 2vw;
+      background: rgba(255, 0, 0, 0.25);
+      border-radius: 1vw;
+      margin-top: 1vw;
       padding: 1vw;
   }
   
-.popup {
+  .popup {
       display: none;
       position: fixed;
       top: 0;
@@ -283,4 +285,106 @@ ul li a img {
           opacity: 0;
       }
   }
-  
+
+  .team-logo {
+    display: block;
+    margin-bottom: 7vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 10vw;
+    height: auto;
+}
+
+.table-container {
+    width: 90%;
+    margin: 5vw auto; 
+    background-color: #fff;
+    border-radius: 3vw;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-right: 2.5vw;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.vozac img {
+    max-width: 100%;
+    border-radius: 2vw;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.brojVozaca {
+    font-size: 5rem;
+}
+
+.vozac {
+    transition: transform 0.3s ease-in-out;
+    padding: 2vw;
+}
+
+.vozac:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3vw;
+    transform: scale(1.1);
+}
+.table-container a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.table-container h2{
+    text-align: center; 
+    font-size: 3rem; 
+    font-family: 'Courier New', monospace;
+}
+
+#profile-section,
+        #year-section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 2vw;
+            border-radius: 1vw;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #cc0000;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+
+        #year-section h2 {
+            color: #cc0000;
+            margin-top: 0;
+            font-weight: bolder;
+        }
+
+        .year-entry {
+            margin-bottom: 20px;
+        }
+
+        .year-entry h3 {
+            color: #cc0000;
+        }
