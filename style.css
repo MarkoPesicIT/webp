@@ -448,7 +448,7 @@ th {
         .staza {
             width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 1vw;
             margin-bottom: 15px;
         }
         
@@ -467,6 +467,7 @@ th {
         
         .top3 {
             margin: 5px;
-            font-size: 1.1em;
-            color: #28a745;
+            font-weight: 600;
+            font-size: 1.5em;
+            color: #063912;
         }
