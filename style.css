@@ -83,6 +83,7 @@ ul li a img {
     height: 100%;
     width: 100%;
     box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .submenu > li:nth-child(odd) {
     transform: skewX(-35deg) translateX(0);
@@ -125,39 +126,36 @@ ul li a img {
 }
 .novosti {
     margin-top: 8vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    border: 10px solid red;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
     border-radius: 5vw;
     box-sizing: border-box;
     overflow: hidden;
-}
-.novosti hr {
-    border-width: 4px;
-    width: 95%;
-    margin: 20px auto;
-    border-color: red;
-    border-radius: 5px;
+    padding: 1vw;
 }
 .novosti h1 {
-    text-align: center;
-    font-size: 2vw;
+    text-align: center; font-size: 3rem; font-family: Courier New, monospace; margin: 1vw; 
 }
 .novosti-section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
-    gap: 1vw;
+    gap: 1.5vw;
     margin: 2vw;
 }
 .novosti-card p {
     font-weight: bolder;
     font-size: 1vw;
+    margin-top: 1vw;
 }
 .novosti-card {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
     width: 100%;
+    padding: 1vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 .novosti-card img {
     border-radius: 2vw;
@@ -167,6 +165,7 @@ ul li a img {
 .novosti-card:hover {
     transform: scale(1.1);
 }
+
 .novosti-card:hover p {
     background: rgba(255, 0, 0, 0.25);
     border-radius: 1vw;
@@ -253,11 +252,11 @@ ul li a img {
 }
 .table-container {
     width: 90%;
-    margin: 5vw auto;
+    margin: 5vw;
     background-color: #fff;
     border-radius: 3vw;
     overflow: hidden;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.5);
     padding-top: 2.5vw;
     padding-bottom: 2.5vw;
     padding-right: 2.5vw;
@@ -314,7 +313,7 @@ th {
     margin-left: 2vw;
     margin-top: 1vw;
     border-radius: 1vw;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 }
 h1 {
     color: #cc0000;
@@ -341,7 +340,7 @@ p {
     background-color: #fafafa;
     border-radius: 2vw;
     overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.5);
     padding-left: 7vw;
     padding-bottom: 7vw;
     display: flex;
@@ -363,7 +362,11 @@ td {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 2vw;
-    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+.event:hover{
+    transform: scale(1.1);
 }
 .event h4 {
     color: #333;
@@ -407,4 +410,40 @@ td {
     font-weight: 600;
     font-size: 1.5em;
     color: #063912;
+}
+
+.stajef1 {
+  margin: 5% 25%;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
+  border-radius: 5vw;
+  padding: 1vw;
+  background-color: white;
+}
+
+.stajef1 h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 2vh;
+  text-decoration: underline;
+}
+
+#uvod {
+  font-size: 1.5rem;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+  font-weight: 750;
+}
+
+.stajef1 p {
+  font-size: 1.5rem;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+  font-weight: 400;
+  padding: 1vw;
+  border-radius: 2vw;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
