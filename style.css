@@ -1,7 +1,12 @@
+:root {
+    --primary:#b80e0e;
+    --bojaTeksta: rgb(71, 71, 71);
+}
+
 body {
     margin: 0px;
     padding: 0;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(250, 250, 250);
 }
 header {
     height: 100%;
@@ -144,6 +149,7 @@ ul li a img {
     margin: 2vw;
 }
 .novosti-card p {
+    color: var(--bojaTeksta);
     font-weight: bolder;
     font-size: 1vw;
     margin-top: 1vw;
@@ -169,6 +175,7 @@ ul li a img {
 .novosti-card:hover p {
     background: rgba(255, 0, 0, 0.25);
     border-radius: 1vw;
+    color: var(--bojaTeksta);
     margin-top: 1vw;
     padding: 1vw;
 }
@@ -218,6 +225,7 @@ ul li a img {
 }
 .popup-content h2 {
     font-size: 2vw;
+    color: var(--bojaTeksta);
     margin-bottom: 10px;
 }
 .popup-content img {
@@ -227,6 +235,7 @@ ul li a img {
 }
 .popup-content p {
     margin-bottom: 2vw;
+    color: var(--bojaTeksta);
     font-size: 1.5vw;
 }
 .popup.closing {
@@ -285,17 +294,20 @@ th {
     border-radius: 2vw;
     transition: transform 0.3s ease-in-out;
 }
+
 .vozac {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    border-radius: 3vw;
     transition: transform 0.3s ease-in-out;
     padding: 2vw;
 }
 .brojVozaca{
+    color: var(--bojaTeksta);
     font-size: 5rem;
 }
 .vozac:hover {
-    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 3vw;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .table-container a {
     text-decoration: none;
@@ -317,15 +329,18 @@ th {
 }
 h1 {
     color: #cc0000;
+    color: var(--bojaTeksta);
     font-size: 2rem;
 }
 p {
     font-size: 1.5rem;
+    color: var(--bojaTeksta);
     line-height: 1.6;
 }
 #year-section h2 {
     color: #cc0000;
     margin-top: 0;
+    color: var(--bojaTeksta);
     font-weight: bolder;
 }
 .year-entry {
@@ -353,6 +368,7 @@ td {
 #rasporednaslov {
     margin: 3vw;
     margin-left: 35%;
+    color: var(--bojaTeksta);
     font-size: 5rem;
     font-family: "Courier New", monospace;
 }
@@ -369,23 +385,24 @@ td {
     transform: scale(1.1);
 }
 .event h4 {
-    color: #333;
+    color: var(--bojaTeksta);
     font-size: 1.5em;
     margin-top: 0.6vw;
     margin-left: 0.6vw;
     margin-bottom: 5px;
 }
 .event h3 {
-    color: #555;
     margin-left: 0.6vw;
     margin-top: 0.6vw;
     font-size: 2.2em;
+    color: var(--bojaTeksta);
     margin-bottom: 10px;
 }
 .event h2 {
     color: #007bff;
     font-size: 1.8em;
     margin-bottom: 15px;
+    color: var(--bojaTeksta);
     text-align: center;
 }
 .staza {
@@ -446,4 +463,101 @@ td {
   padding: 1vw;
   border-radius: 2vw;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.timovi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    margin: 5vw 15% auto;
+    border: 10px solid black;
+    padding: 2vw;
+}
+
+.team-container {
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    color: #fff;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 2vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    aspect-ratio: 1/1;
+    width: 80%;
+    transition: transform 0.7s ease;
+}
+
+.team-container a {
+    text-decoration: none;
+}
+
+.team-container h1 {
+    font-size: 4rem;
+    margin-top: -2vw;
+}
+.team-container img {
+    width: 30%;
+    max-width: 100%;
+    align-self: center;
+    border-radius: 1vw; ;
+    z-index: -1;
+}
+.f1boliddiv {
+    display: flex;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 1vw;
+    padding: 1vw;
+}
+.vozac-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#f1bolid {
+    width: 30vh;
+    height: auto;
+}
+
+.blok {
+    z-index: -1;
+    min-width: 1vw;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    width: 0;
+    height: 24px;
+    transition: width 0.7s ease;
+    box-shadow: inset -20px 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.ferrari{
+    background-color: #e31919;
+}
+
+.redbull{
+    background-color: #03166d;
+}
+
+.mercedes{
+    background-color: silver;
+}
+
+.mclaren{
+    background-color: #fc8000;
+}
+
+.team-container:hover {
+    transform: scale(1.1);
+    transition-delay: 0.2s;
+}
+
+.team-container:hover .blok {
+    width: 180px;
 }

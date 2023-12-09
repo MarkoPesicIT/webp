@@ -25,4 +25,14 @@ function openPopup(title, content) {
     document.getElementById('popup-image').src = imageUrl;
     document.getElementById('popup').style.display = 'block';
 }
+// script.js
+class Navbar extends HTMLElement {
+  constructor() {
+    super();
+    const template = document.getElementById('navbar').content;
+    const shadowRoot = this.attachShadow({ mode: 'open' });
+    shadowRoot.appendChild(template.cloneNode(true));
+  }
+}
 
+customElements.define('custom-navbar', Navbar);
