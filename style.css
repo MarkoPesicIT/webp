@@ -137,16 +137,17 @@ ul li a img {
     border-radius: 5vw;
     box-sizing: border-box;
     overflow: hidden;
-    padding: 1vw;
+    padding: 3vw;
 }
 .novosti h1 {
     text-align: center; font-size: 3rem; font-family: Courier New, monospace; margin: 1vw; 
 }
 .novosti-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
-    gap: 1.5vw;
-    margin: 2vw;
+    grid-template-columns: repeat(auto-fill, minmax(15vw, 2fr));
+    gap: 3.5vw;
+    margin: 2vw auto;
+    margin-right: 1.5vw; 
 }
 .novosti-card p {
     color: var(--bojaTeksta);
@@ -160,7 +161,7 @@ ul li a img {
     overflow: hidden;
     width: 100%;
     padding: 1vw;
-    border-radius: 2vw;
+    border-radius: 3vw;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 .novosti-card img {
@@ -376,13 +377,17 @@ td {
     margin-top: 2vw;
     max-width: 400px;
     padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 2vw;
+    border-right: 0.2vw solid #ddd;
+    border-bottom: 0.2vw solid #ddd;
+    border-radius: 1vw;
+    border-bottom-right-radius: 2vw;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
 }
 .event:hover{
     transform: scale(1.1);
+    border-right: 0.3vw solid  red;
+    border-bottom: 0.3vw solid red;
 }
 .event h4 {
     color: var(--bojaTeksta);
@@ -476,11 +481,13 @@ td {
 
 .team-container {
     position: relative;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
-    color: #fff;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
     padding: 1vw;
     text-align: center;
-    border-radius: 2vw;
+    border-bottom: 0.2vw solid rgb(193, 193, 193);
+    border-right: 0.2vw solid rgb(193, 193, 193);
+    border-radius: 1vw;
+    border-bottom-right-radius: 2vw; ;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -506,12 +513,17 @@ td {
     border-radius: 1vw; ;
     z-index: -1;
 }
+
+.vozacitimovi{
+    height: 260px;
+    width: auto;
+}
 .f1boliddiv {
     display: flex;
     margin-top: 1vw;
     margin-left: 1vw;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.07);
+    /* background-color: rgba(0, 0, 0, 0.07); */
     border-radius: 1vw;
     padding: 1vw;
 }
@@ -519,6 +531,10 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.vozac-logo IMG{
+    margin: 0.5vw;
 }
 
 #f1bolid {
@@ -553,9 +569,22 @@ td {
     background-color: #fc8000;
 }
 
+.astonmartin{
+    background-color: #00655e;
+}
+
+.alpine{
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.williams{
+    background-color: #0e17c4;
+}
 .team-container:hover {
     transform: scale(1.1);
     transition-delay: 0.2s;
+    border-bottom: 0.3vw solid rgb(255, 0, 0);
+    border-right: 0.3vw solid rgb(255, 0, 0);
 }
 
 .team-container:hover .blok {

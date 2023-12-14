@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/b1155eded5.js"
+			crossorigin="anonymous"
+			></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Pocetna</title>
+	</head>
+	<body>
+		<header>
+			<ul class="menu cf">
+				<li>
+					<a href="index.html">
+						<div class="logo">
+							<img src="slike/f1-logo.svg" />
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="active" onclick="changePage('home')" href="index.html"
+						>Pocetna</a
+						>
+				</li>
+				<li>
+					<a href="raspored.html">Raspored</a>
+				</li>
+				<li>
+					<a href="timovi.html">Timovi</a>
+					<ul class="submenu">
+						<li>
+							<a href="ferrari.html" onclick="changePage('ferrari')"
+								>Ferrari
+							<img class="logoTimova" src="logoTimova/ferrari.png" />
+							</a>
+						</li>
+						<li>
+							<a href="redbull.html"
+								>Red Bull
+							<img class="logoTimova" src="logoTimova/redbull.png" />
+							</a>
+						</li>
+						<li>
+							<a href="mercedes.html"
+								>Mercedes
+							<img class="logoTimova" src="logoTimova/mercedes.png" />
+							</a>
+						</li>
+						<li>
+							<a href="mclaren.html"
+								>McLaren
+							<img class="logoTimova" src="logoTimova/mclaren.png" />
+							</a>
+						</li>
+						<li>
+							<a href="astonmartin.html"
+								>Aston Martin
+							<img class="logoTimova" src="logoTimova/astonmartin.png" />
+							</a>
+						</li>
+						<li>
+							<a href="alpine.html"
+								>Alpine
+							<img class="logoTimova" src="logoTimova/alpine.png" />
+							</a>
+						</li>
+						<li>
+							<a href="williams.html"
+								>Williams
+							<img class="logoTimova" src="logoTimova/williams.png" />
+							</a>
+						</li>
+						<li>
+							<a href="alphatauri.html"
+								>AlphaTauri
+							<img class="logoTimova" src="logoTimova/alphatauri.png" />
+							</a>
+						</li>
+						<li>
+							<a href="alfaromeo.html"
+								>Alfa Romeo
+							<img class="logoTimova" src="logoTimova/alfaromeo.png" />
+							</a>
+						</li>
+						<li>
+							<a href="haasf1.html"
+								>Haas F1
+							<img class="logoTimova" src="logoTimova/haasf1.png" />
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="omeni.html">O meni</a>
+				</li>
+			</ul>
+		</header>
+		<section class="strana">
+			<section class="stajef1">
+				<div class="hf1">
+					<h1
+						style="
+						text-align: center;
+						font-size: 3rem;
+						font-family: Courier, monospace;
+						margin: 1vw;
+						"
+						>
+						Sta je Formula 1?
+					</h1>
+					<div
+						style="
+						border: 5px solid rgba(255, 0, 0, 0.7);
+						width: 95%;
+						margin: 0 auto;
+						border-radius: 50%;
+						"
+						></div>
+					<p id="uvod">
+						Formula 1 (F1) predstavlja vrhunsko takmičenje u auto-moto sportu, a
+						njena bogata istorija i tehnološki napredak čine je jednim od
+						najuzbudljivijih sportskih događaja na svetu.
+					</p>
+					<div
+						style="
+						border: 3px solid rgba(255, 0, 0, 0.7) red;
+						width: 75%;
+						margin: 0 auto;
+						border-radius: 50%;
+						"
+						></div>
+					<h2>Istorija Formule 1</h2>
+					<p>
+						Formula 1 započela je 1950. godine kao serija trka koje su
+						uključivale najbolje vozače i ekipe tog vremena. Prva trka održana
+						je na stazi Silverstone u Velikoj Britaniji. Od tada, sport je
+						doživeo značajne transformacije u pogledu tehnologije, bezbednosti,
+						i globalnog prestiža.
+					</p>
+					<div
+						style="
+						border: 3px solid rgba(255, 0, 0, 0.7);
+						width: 75%;
+						margin: 0 auto;
+						border-radius: 50%;
+						"
+						></div>
+					<h2>Bolidi i Tehnologija</h2>
+					<p>
+						Sezona Formule 1 obuhvata seriju trka koje se održavaju širom sveta.
+						Uobičajeno počinje u martu i završava se u novembru. Trke se
+						održavaju na različitim stazama, uključujući klasične staze poput
+						Monze u Italiji, gradske staze poput trke u Monaku, i moderna
+						postignuća poput staze u Abu Dabiju.
+					</p>
+					<div
+						style="
+						border: 3px solid rgba(255, 0, 0, 0.7);
+						width: 75%;
+						margin: 0 auto;
+						border-radius: 50%;
+						"
+						></div>
+					<h2>Vozači i Timovi</h2>
+					<p>
+						Svaki vozač i tim teže osvajanju šampionskih titula. Velika imena
+						poput Michaela Schumachera, Ayrtona Senne i Lewis Hamiltona postala
+						su legendarna u svetu Formule 1. Ekipama poput Ferrarija,
+						Mercedes-Benz-a i Red Bull Racinga pripada vrhunska tehnologija i
+						stručnost u vožnji.
+					</p>
+					<div
+						style="
+						border: 3px solid rgba(255, 0, 0, 0.7);
+						width: 75%;
+						margin: 0 auto;
+						border-radius: 50%;
+						"
+						></div>
+					<h2>Bodovanje i Titule</h2>
+					<p>
+						Vozači i timovi osvajaju bodove na osnovu pozicija u trkama tokom
+						sezone. Vozač koji osvoji najviše bodova postaje svetski šampion
+						vozača, dok ekipa s najviše bodova osvaja šampionsku titulu
+						konstruktora.
+					</p>
+					<div
+						style="
+						border: 3px solid rgba(255, 0, 0, 0.7);
+						width: 75%;
+						margin: 0 auto;
+						border-radius: 50%;
+						"
+						></div>
+					<h2>Sigurnost</h2>
+					<p>
+						Bezbednost vozača je prioritet u Formuli 1. Uvode se stalne promene
+						u pravilima kako bi se poboljšala sigurnost, uključujući inovacije
+						poput boljih zaštitnih ograda, sistema zaštite vozača (HALO), i
+						pravila o dizajnu staza.
+					</p>
+					<div
+						style="
+						border: 3px solid rgba(255, 0, 0, 0.7);
+						width: 75%;
+						margin: 0 auto;
+						border-radius: 50%;
+						"
+						></div>
+					<h2></h2>
+					<p>
+						Bezbednost vozača je prioritet u Formuli 1. Uvode se stalne promene
+						u pravilima kako bi se poboljšala sigurnost, uključujući inovacije
+						poput boljih zaštitnih ograda, sistema zaštite vozača (HALO), i
+						pravila o dizajnu staza.
+					</p>
+					<div
+						style="
+						border: 3px solid rgba(255, 0, 0, 0.7);
+						width: 75%;
+						margin: 0 auto;
+						border-radius: 50%;
+						"
+						></div>
+					<h2>Globalni Uticaj</h2>
+					<p>
+						Formula 1 ima ogroman globalni uticaj. Milioni ljudi prate trke
+						širom sveta, a sport privlači sponzore, investitore i tehnološke
+						inovatore.
+					</p>
+				</div>
+			</section>
+			<div class="image-container">
+				<div class="slider-container">
+					<img class="img" src="slike/baner.png" />
+					<img class="img" src="slike/slika2.png" />
+					<img class="img" src="slike/slika3.png" />
+					<img class="img" src="slike/slika4.png" />
+					<img class="img" src="slike/slika5.png" />
+				</div>
+			</div>
+			<div class="grid">
+				<div class="grid-item">
+					<div class="slikatekst">
+						<img src="slike/slika11.png" alt="Image 1" />
+						<script>
+							function toggleHidden1() {
+							      var hiddenText = document.querySelector(".tekst1 p.hidden1");
+							      hiddenText.classList.toggle("visible");
+							}
+						</script>
+						<div class="tekst tekst1">
+							<p>
+								Formula 1, jedno od najprestižnijih sportskih takmičenja na
+								svetu, ima svoje korene u periodu posle Drugog svetskog rata.
+								Inženjeri i vozači, inspirisani željom za ponovnim okupljanjem
+								nakon teških godina rata, bili su ključni u stvaranju prvih trka
+								1950. godine.
+							</p>
+							<p class="hidden hidden1">
+								Prva sezona održana je na stazi Silverstone, a šampion te godine
+								bio je Giuseppe Farina, postavši simbol početka ere koja će
+								zauvek promeniti svet automobilizma.
+							</p>
+							<button class="read-more" onclick="toggleHidden1()">
+							Procitaj vise
+							</button>
+						</div>
+					</div>
+					<hr />
+					<div class="slikatekst">
+						<img src="slike/slika22.png" alt="Image 1" />
+						<script>
+							function toggleHidden2() {
+							      var hiddenText = document.querySelector(".tekst2 p.hidden2");
+							      hiddenText.classList.toggle("visible");
+							}
+						</script>
+						<div class="tekst tekst2">
+							<p>
+								U toku istorije Formule 1, vozači su postajali legende, a
+								rivalstva su postajala nezaboravna. Senna protiv Prosta,
+								Schumacher protiv Hakkinena, to su sukobi koji su ostavili dubok
+								pečat na sportskoj sceni.
+							</p>
+							<p class="hidden hidden2">
+								Neki od najvećih imena u automobilizmu, kao Juan Manuel Fangio,
+								Ayrton Senna i Michael Schumacher, definisali su razvoj sporta
+								svojim jedinstvenim vozačkim stilovima i neverovatnim uspesima
+								na stazi.
+							</p>
+							<button class="read-more" onclick="toggleHidden2()">
+							Procitaj vise
+							</button>
+						</div>
+					</div>
+					<hr />
+					<div class="slikatekst">
+						<img src="slike/slika33.png" alt="Image 1" />
+						<script>
+							function toggleHidden3() {
+							      var hiddenText = document.querySelector(".tekst3 p.hidden3");
+							      hiddenText.classList.toggle("visible");
+							}
+						</script>
+						<div class="tekst tekst3">
+							<p>
+								Nisu samo vozači bili ključni za uspeh Formule 1, već i timovi
+								koji su stajali iza njih. Ferrari, McLaren, Mercedes i Red Bull
+								su postali sinonimi za vrhunsku izdržljivost i tehničku
+								briljantnost.
+							</p>
+							<p class="hidden hidden3">
+								Tehnološki napredak, poput uvođenja KERS sistema, hibridne
+								tehnologije i konstantnog poboljšavanja aerodinamike, dodatno su
+								unapredili performanse vozila.
+							</p>
+							<button class="read-more" onclick="toggleHidden3()">
+							Procitaj vise
+							</button>
+						</div>
+					</div>
+					<hr />
+					<div class="slikatekst">
+						<img src="slike/slika44.png" alt="Image 1" />
+						<script>
+							function toggleHidden4() {
+							      var hiddenText = document.querySelector(".tekst4 p.hidden4");
+							      hiddenText.classList.toggle("visible");
+							}
+						</script>
+						<div class="tekst tekst4">
+							<p>
+								Uprkos uzbuđenjima i uspesima, Formula 1 je suočila i sa tamnim
+								trenucima. Pogibije vozača poput Ayrtona Senne i Niki Lauda
+								podsetile su svet na rizike ovog opasnog sporta.
+							</p>
+							<p class="hidden hidden4">
+								Međutim, istorija Formule 1 takođe je obeležena tragedijama koje
+								su podsetile svet na opasnosti ovog izazovnog sporta. Pogibije
+								velikih vozača, poput Ayrtona Senne i Niki Lauda, usmerile su
+								pažnju na potrebu za poboljšanjem bezbednosti
+							</p>
+							<button class="read-more" onclick="toggleHidden4()">
+							Procitaj vise
+							</button>
+						</div>
+					</div>
+					<hr />
+					<div class="slikatekst">
+						<img src="slike/slika55.png" alt="Image 1" />
+						<script>
+							function toggleHidden5() {
+							      var hiddenText = document.querySelector(".tekst5 p.hidden5");
+							      hiddenText.classList.toggle("visible");
+							}
+						</script>
+						<div class="tekst tekst5">
+							<p>
+								Današnja Formula 1 reflektuje savremene inovacije, brzinu i
+								taktiku. Sa svakom sezonom donose se nova pravila, tehnički
+								izazovi i neizvesnost, čineći svaku trku nezaboravnom.
+							</p>
+							<p class="hidden hidden5">
+								Rivalstva poput onih između Hamiltona i Verstappena dodaju dramu
+								i neizvesnost, čineći svaku trku pravim spektaklom za
+								obožavaoce. Za one koji žele istražiti dublje u fascinantnu
+								istoriju Formule 1, pozivamo vas da nastavite čitanje i
+								istraživanje ovog dinamičnog sveta automobilskog trkanja.
+							</p>
+							<button class="read-more" onclick="toggleHidden5()">
+							Procitaj vise
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="novosti">
+				<h1>Novosti</h1>
+				<div
+					style="border: 5px solid rgba(255, 0, 0, 0.7);width: 95%;margin: 0 auto;border-radius: 50%;"
+					></div>
+				<section class="novosti-section">
+					<div
+						class="novosti-card"
+						onclick="openPopup('UTORAK TEHNIKE: Da li je Ferarijev kvalifikacioni ulog na nivou zadnjeg krila koštao pobede u Las Vegasu?', 'Nivoi krila odigrali su ključnu ulogu u borbi između Red Bull-a i Ferrari-ja prošlog vikenda u Las Vegasu - i oba tima su vršila nekoliko prilagođavanja svom izabranom nivou sile koja pritiska kako bi otkrili tajnu kako pobediti protivnika.', 'Ferrari je došao sa verzijom svog spojnog krila sa niskim nivoom sile koja pritiska (sa izrezom u području režnja iza mehanizma DRS-a kako bi smanjio otpor), sličnom onoj korišćenoj u Spa. Ovo krilo ima značajnu površinu na svojoj donjoj strani u odnosu na gornju površinu krila. Što više površine donja strana ima u odnosu na gornju površinu krila, to je veća sila koja pritiska i otpor.', 'Slike/vest1.webp')"
+						>
+						<img src="Slike/vest1.webp" alt="Vest 3" />
+						<p>
+							UTORAK TEHNIKE: Da li je Ferarijev kvalifikacioni ulog na nivou
+							zadnjeg krila koštao pobede u Las Vegasu?
+						</p>
+					</div>
+					<div
+						class="novosti-card"
+						onclick="openPopup('F1 NATION: Verstappen ostvaruje veliku pobedu dok Leclerc propušta priliku - to je naša recenzija Velike nagrade Las Vegasa.', 'Bila je spektakularna trka u Las Vegasu, gde je Max Verstappen izašao kao pobednik, obezbedivši svoju 18. pobedu sezone. Međutim, vikend u Prestonici zabave sveta pružio je mnogo tema za analizu, a naš F1 Nation tim je tu da to obavi. Iz samog srca Vegas paddock-a, Tom Clarkson ponovo se pridružuje Natalie Pinkham i Damonu Hillu dok pregledavaju uzbudljivu prvu trku na stazi Las Vegas Strip, gde je Verstappen ostvario tešku pobedu. Pročitajte više: 5 Pobednika i 5 Gubitnika iz Las Vegasa - Ko je pogodio džekpot u Gradu greha? Verstappen je prebrodio petosekundnu kaznu i konkurenciju Charlesa Leclerca kako bi ostvario pobedu. Ali da li Las Vegas predstavlja još jednu propuštenu priliku za Leclerca i Ferrari, ili su bili samo nesrećni? Družina takođe ocenjuje performanse Sergija Pereza, nakon što se meksički vozač oporavio s dna poretka kako bi završio na podijumu. Time je osigurao drugo mesto u šampionatu vozača, pa šta to može značiti za njegovu budućnost s Red Bull-om? ', 'S Leclercom na drugom mestu i Carlosom Sainzom na šestom, razlika između Ferrarija i drugoplasiranog Mercedesa u poretku konstruktora je samo četiri boda. S obzirom na to da se ta borba bliži uzbudljivom finalu u Abu Dabiju, čujemo mišljenja ambasadora Ferrarija Marca Genea i tehničkog direktora Silver Arrowsa Jamesa Allisona. Takođe nam u goste svraća na brzi razgovor Esteban Ocon, koji je verovatno pružio najbolju vožnju vikenda. Vozač Alpine-a prešao je s 16. na 4. mesto, a on nam opisuje svoj uzbudljiv vikend u Las Vegasu. Još jedan vozač koji je krenuo sa skromnog startnog položaja da bi završio među prvih deset bio je Lance Stroll, a Tom McCullough, direktor performansi Aston Martina, razmatra peto mesto kanadskog vozača nakon startovanja sa 19. pozicije. Pročitajte više: KAŽE KO?! Verstappen peva, Noris se sudara, a Leclerc uzvikuje jee-haw - najbolji radio snimci tima iz Las Vegasa Pogledajte recenziju Velike nagrade Las Vegasa na epizodi F1 Nation tako što ćete pritisnuti dugme za reprodukciju zvuka iznad ili kliknuti ovde kako biste slušali putem vašeg omiljenog provajdera podcasta. Želite li da vaše pitanje bude odgovoreno od strane ekipe F1 Nation u nekoj od narednih epizoda?', 'Slike/vest2.jpg')"
+						>
+						<img src="Slike/vest2.jpg" alt="Vest 4" />
+						<p>
+							F1 NATION: Verstappen ostvaruje veliku pobedu dok Leclerc propušta
+							priliku - to je naša recenzija Velike nagrade Las Vegasa.
+						</p>
+					</div>
+					<div
+						class="novosti-card"
+						onclick="openPopup('Bearman i Fittipaldi će voziti za tim Haas na testiranju u Abu Dabiju nakon završetka sezone.', 'Haas je objavio sastav svojih vozača za jednodnevno testiranje nakon sezone na stazi Yas Marina u Abu Dabiju 28. novembra - sa zvezdom Formule 2 Oliverom Bearmanom i dugogodišnjim rezervnim vozačem tima Pietrom Fittipaldijem koji će voziti na testovima guma i testovima mladih vozača. Fittipaldi je vozio za Haas dva puta tokom sezone 2020. umesto povređenog Romaina Grosjeana, dok je član Ferrarijeve vozačke akademije Bearman impresionirao tim svojim nedavnim debijem u slobodnim treninzima u Meksiku - pri čemu je Ayao Kamatsu, direktor inženjeringa Haasa, komentarisao: Mislim da mu se ne može ništa zameriti.', 'Stvarno se dobro snašao. Bearman će imati dva izlaska u bolidu Haas VF-23 u Abu Dabiju, pri čemu će drugi nastup u slobodnim treninzima biti ovog petka, pre testa nakon sezone u utorak. Britanac će takođe imati na umu Formulu 2, jer se prvenstvo odlučuje ovog vikenda u Abu Dabiju - F2 debitant Bearman trenutno zauzima šesto mesto na tabeli. Radujem se Young Driver Testu sa MoneyGram Haas F1 timom u Abu Dabiju, rekao je Bearman. Radimo FP1 zajedno u petak, pa će biti sjajno moći nadograditi to i provesti pun dan u bolidu. Young Driver Test je poslednja prilika koju će tim imati ove godine da radi na stvarima za 2024. godinu, i trudiću se da obavim solidan posao. Tim me je učinio veoma prijatnim od trenutka kada smo se sreli u Kataru, i zaista uživam u radu s njima. Radujem se što ću videti sve u Abu Dabiju.', 'Slike/vest3.webp')"
+						>
+						<img src="Slike/vest3.webp" alt="Vest 3" />
+						<p>
+							Bearman i Fittipaldi će voziti za tim Haas na testiranju u Abu
+							Dabiju nakon završetka sezone.
+						</p>
+					</div>
+					<div
+						class="novosti-card"
+						onclick="openPopup('SAY WHAT?! Verstappen peva, Noris se sudara, a Leclerc uzvikuje jee-haw - najbolji radio snimci tima iz Las Vegasa', 'F1 automobili jurnu niz čuveni Las Vegas Strip, varnice lete, a mnogo trkanja točak uz točak dočekalo je navijače u subotu noću, s Maxom Verstappenom koji je ponovo izašao kao pobednik za Red Bull. Ali nije bio lak vikend za njega, niti za bilo kog njegovog kolegu, kako je pokazala komunikacija putem radija... Slobodni treninzi 1 su završeni pre vremena kada je Carlos Sainz bio primoran zaustaviti se zbog oštećenja automobila nakon što je prešao preko betonskog okvira za vodovodni ventil, a Alex Albon takođe morao da se zaustavi na stazi nakon što je udario u zid tokom Slobodnih treninga 3, pri čemu su oba vozača zvučala frustrirano na radiju.', 'Kada je došlo do kvalifikacija, Logan Sargeant je bio oduševljen svojim najboljim startnim mestom u karijeri, dok je Charles Leclerc zvučao blago iznenađen što je na pol poziciji. Ali nije bilo ničega osim bola za Landa Norrisa na dan trke - na više načina. Fakta i statistika: Verstappen ostvaruje istorijski hat-trick u SAD dok Red Bull obezbeđuje prvo 1-2 mesto u šampionatu vozača Verstappen je imao poruku za sudije nakon što mu je dodeljena kazna vremena, nešto što je Leclerc tvrdio da zaslužuje. To nije bilo jedino vreme kada je Holanđanin koristio radio, jer je izrazio ljutnju prema Georgeu Russellu, ali na kraju je sve bilo osmehe jer je još jedna pobeda bila proslavljena na pravi način.', 'Slike/vest4.jpg')"
+						>
+						<img src="Slike/vest4.jpg" alt="Vest 4" />
+						<p>
+							SAY WHAT?! Verstappen peva, Noris se sudara, a Leclerc uzvikuje
+							jee-haw - najbolji radio snimci tima iz Las Vegasa
+						</p>
+					</div>
+				</section>
+			</div>
+			<div class="popup" id="popup">
+				<div class="popup-content-container">
+					<div class="popup-content">
+						<span class="close" onclick="closePopup()">&times;</span>
+						<h2 id="popup-title"></h2>
+						<img id="popup-image" src="" alt="novosti Image" />
+						<div id="popup-content"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer-content">
+				<div class="footer-section">
+					<h2>Quick links</h2>
+					<p><a href="index.html">Pocetna</a></p>
+					<p><a href="raspored.html">Raspored</a></p>
+					<p><a href="timovi.html">Timovi</a></p>
+					<p><a href="omeni.html">O Meni</a></p>
+				</div>
+				<div class="footer-section">
+					<h2>O sajtu</h2>
+					<p>Dobrodošli na naš F1 sajt - vaša centralna destinacija za sve vezano za Formulu 1. Pratite najnovije vesti, istražite detalje o omiljenim vozačima, i budite u toku sa šampionatom. Pored toga, nudimo pregledan raspored trka i mogućnost povezivanja sa zajednicom ljubitelja F1. Uživajte u brzini i uzbuđenju Formule 1 na našem sajtu!</p>
+				</div>
+				<div class="footer-section">
+					<h2>Povezi se</h2>
+					<div class="footer-social">
+						<a href="https://www.facebook.com/Formula1/" target="_blank">Facebook</a>
+						<a href="https://twitter.com/f1" target="_blank">Twitter</a>
+						<a href="https://www.formula1.com/en.html" target="_blank">Instagram</a>
+						<a href="https://www.formula1.com/en.html" target="_blank">Formula 1</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
