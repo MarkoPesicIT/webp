@@ -16,7 +16,7 @@ body {
 }
 
 .strana {
-	margin: 5em 40em;
+	margin: 5vw 30vw;
 }
 
 header {
@@ -102,7 +102,44 @@ ul li a img {
 	background-color: #c03636;
 	position: relative;
 	overflow: hidden;
+	transition-delay: 0s;
 }
+
+.submenu>li:nth-child(2) {
+	transition-delay: 0ms; 
+  }
+  
+  .submenu>li:nth-child(3) {
+	transition-delay: 100ms; 
+  }
+  
+  .submenu>li:nth-child(4) {
+	transition-delay: 200ms; 
+  }
+  
+  .submenu>li:nth-child(5) {
+	transition-delay: 300ms; 
+  }
+  
+  .submenu>li:nth-child(6) {
+	transition-delay: 400ms; 
+  }
+  
+  .submenu>li:nth-child(7) {
+	transition-delay: 500ms; 
+  }
+  
+  .submenu>li:nth-child(8) {
+	transition-delay: 600ms;
+  }
+  
+  .submenu>li:nth-child(9) {
+	transition-delay: 700ms; 
+  }
+  
+  .submenu>li:nth-child(10) {
+	transition-delay: 800ms; 
+  }
 
 .submenu>li>a {
 	padding-top: 1em;
@@ -179,6 +216,7 @@ ul li a img {
 }
 
 .stajef1 h2 {
+	font-size: 1rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-align: center;
 	margin-top: 2vh;
@@ -186,16 +224,16 @@ ul li a img {
 }
 
 #uvod {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	margin-left: 3vw;
 	margin-right: 3vw;
 	margin-top: 1vw;
 	margin-bottom: 3vw;
-	font-weight: 750;
+	font-weight: 450;
 }
 
 .stajef1 p {
-	font-size: 1.5rem;
+	font-size: 0.8em;
 	margin-left: 3vw;
 	margin-right: 3vw;
 	margin-top: 1vw;
@@ -272,17 +310,16 @@ ul li a img {
 	border-radius: 1em;
 	width: 50%;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-	max-width: 300px;
+	max-width: 15vw;
 }
-
-.tekst {
-	max-width: 600px;
-	margin-left: 2em;
+.slikatekst p{
+	font-size: 0.7rem;
+	margin: 1.5vw;
 }
 
 .read-more {
 	float: right;
-	margin: 2em auto;
+	margin: 2vw auto;
 	cursor: pointer;
 	border: 0;
 	padding: 0.5em;
@@ -304,12 +341,14 @@ ul li a img {
 
 
 .timovi {
+	padding: 1vw;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 3em;
+	gap: 1vw;
 }
 
 .timovipredgovor>p {
+	font-size: 1vw;
 	padding: 3em;
 	margin-bottom: 5em;
 	background-color: rgba(255, 255, 255, 0.5);
@@ -320,20 +359,18 @@ ul li a img {
 .team-container {
 	position: relative;
 	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-	padding: 2em;
+	padding: 1vw;
 	text-align: center;
 	border-bottom: 0.2vw solid rgb(193, 193, 193);
 	border-right: 0.2vw solid rgb(193, 193, 193);
 	border-radius: 1vw;
 	border-bottom-right-radius: 2vw;
-	;
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin: auto;
 	aspect-ratio: 1/1;
-	width: 80%;
+	width: 85%;
 	z-index: 1;
 	transition: transform 0.7s ease;
 }
@@ -342,10 +379,7 @@ ul li a img {
 	z-index: -1;
 	box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
 	background-color: rgba(255, 255, 255, 0.5);
-	padding-top: 1em;
-	padding-right: 3em;
-	padding-left: 3em;
-	padding-bottom: 3em;
+	padding: 1vw;
 	border-radius: 2em;
 }
 
@@ -355,7 +389,7 @@ ul li a img {
 
 .team-container h1 {
 	z-index: -1;
-	font-size: 2em;
+	font-size: 1vw;
 }
 
 .team-container img {
@@ -363,12 +397,11 @@ ul li a img {
 	max-width: 100%;
 	align-self: center;
 	border-radius: 1vw;
-	;
 	z-index: -1;
 }
 
 .vozacitimovi {
-	height: 170px;
+	height: 80px;
 	width: auto;
 }
 
@@ -390,7 +423,7 @@ ul li a img {
 }
 
 #f1bolid {
-	width: 10em;
+	width: 7vw;
 	height: auto;
 }
 
@@ -400,10 +433,10 @@ ul li a img {
 	border-top-left-radius: 100%;
 	border-bottom-left-radius: 100%;
 	width: 0;
-	height: 24px;
+	height: 1vw;
 	border-bottom-right-radius: 50%;
 	border-top-right-radius: 50%;
-	transition: width 0.7s ease;
+	transition: width 1s ease-in-out;
 	box-shadow: inset -20px 0 30px rgba(255, 255, 255, 0.3);
 }
 
@@ -459,61 +492,65 @@ ul li a img {
 }
 
 .table-container {
-	width: 90%;
+	width: 70%;
 	margin: 5em auto;
 	background-color: #fff;
-	border-radius: 3vw;
+	border-radius: 2vw;
 	overflow: hidden;
 	box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
-	padding-top: 2.5vw;
-	padding-bottom: 2.5vw;
-	padding-right: 2.5vw;
+	padding: 2vw;
+	padding-right: 1vw;
 }
 
 table {
 	width: 100%;
 	border-collapse: collapse;
-	margin-left: 1vw;
-	margin-right: 1vw;
 	border: 0;
 }
 
 th,
 td {
-	padding: 15px;
 	text-align: left;
-	border-bottom: 1px solid #ddd;
 }
 
 th {
 	background-color: #ffffff;
 	color: #222222;
 }
-
+th p{
+	font-size: 1vw;
+}
 .vozac-slika {
 	background-color: #222222;
 }
 
 .vozac img {
-	max-width: 100%;
-	border-radius: 2vw;
+	width: 100%;
+	height: 40vh;
+	border-radius: 1vw;
 	transition: transform 0.3s ease-in-out;
+}
+
+.vozac h1{
+	font-size: 1.5vw;
+	text-align: left;
 }
 
 .vozac {
 	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-	border-radius: 3vw;
+	border-radius: 1vw;
 	transition: transform 0.3s ease-in-out;
-	padding: 2vw;
+	padding: 0.7vw;
+	height: auto;
+	width: 15vw;
 }
 
 .brojVozaca {
 	color: var(--bojaTeksta);
-	font-size: 5rem;
+	font-size: 2vw;
 }
 
 .vozac:hover {
-	border-radius: 3vw;
 	transform: scale(1.05);
 }
 
@@ -526,14 +563,14 @@ th {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 20vw;
+	width: 10vw;
 	height: auto;
 	border-radius: 2em;
 }
 
 .table-container h2 {
 	text-align: center;
-	font-size: 3rem;
+	font-size: 1rem;
 	font-family: "Courier New", monospace;
 }
 
@@ -541,26 +578,26 @@ th {
 #year-section {
 	background-color: #fff;
 	padding: 20px;
-	margin-left: 2vw;
 	margin-top: 1vw;
 	border-radius: 1vw;
 	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 }
 
 h1 {
+	text-align: center;
 	color: #cc0000;
 	color: var(--bojaTeksta);
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 p {
-	font-size: 1.5rem;
+	font-size: 1vw;
 	color: var(--bojaTeksta);
 	line-height: 1.6;
 }
 
 #year-section h2 {
-	color: #cc0000;
+	font-size: 1.5vw;
 	margin-top: 0;
 	color: var(--bojaTeksta);
 	font-weight: bolder;
@@ -570,9 +607,6 @@ p {
 	margin-bottom: 20px;
 }
 
-.year-entry h3 {
-	color: #cc0000;
-}
 
 .novosti {
 	margin-top: 5em;
@@ -593,7 +627,7 @@ p {
 
 .novosti-section {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(15vw, 2fr));
+	grid-template-columns: repeat(auto-fill, minmax(10vw, 2fr));
 	gap: 3.5vw;
 	margin: 2vw auto;
 	margin-right: 1.5vw;
@@ -721,8 +755,7 @@ p {
 
 .table-raspored {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
-	/* Adjust minmax and other values based on your preference */
+	grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
 	width: 100%;
 	margin: 0 auto;
 	background-color: rgba(255, 255, 255, 0.7);
@@ -746,15 +779,15 @@ p {
 
 .brojDatum {
 	background: rgba(255, 0, 0, 0.2);
-	padding: 2em;
+	padding: 0.1vw;
 	border-radius: 1em;
 	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 }
 
 #rasporednaslov {
 	margin: 3vw;
-	margin-left: 35%;
-	font-size: 5rem;
+	font-size: 4vw;
+	text-align: center;
 	font-family: "Courier New", monospace;
 }
 
@@ -766,7 +799,7 @@ p {
 
 .event h4 {
 	color: var(--bojaTeksta);
-	font-size: 1.5em;
+	font-size: 1vw;
 	margin-top: 0.6vw;
 	margin-left: 0.6vw;
 	margin-bottom: 5px;
@@ -775,14 +808,14 @@ p {
 .event h3 {
 	margin-left: 0.6vw;
 	margin-top: 0.6vw;
-	font-size: 2.2em;
+	font-size: 1vw;
 	color: var(--bojaTeksta);
 	margin-bottom: 10px;
 }
 
 .event h2 {
 	color: #007bff;
-	font-size: 1.8em;
+	font-size: 1.5vw;
 	margin-bottom: 15px;
 	color: var(--bojaTeksta);
 	text-align: center;
@@ -806,13 +839,11 @@ p {
 .podium {
 	width: 100%;
 	height: auto;
-	margin-right: 10px;
 }
 
 .top3 {
-	margin: 5px;
 	font-weight: 300;
-	font-size: 1.2em;
+	font-size: 0.7vw;
 	color: #063912;
 }
 
@@ -874,4 +905,21 @@ footer {
 
 .footer-social a:hover {
 	color: var(--primary);
+}
+
+.vozacomeni{
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+	border-radius: 1vw;
+	transition: transform 0.3s ease-in-out;
+	padding: 0.7vw;
+	height: auto;
+	width: 10vw;
+}
+
+.vozacomeni > h1{
+	font-size: 1.4vw;
+}
+
+.vozacomeni img{
+	border-radius: 1vw;
 }
