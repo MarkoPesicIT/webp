@@ -66,7 +66,7 @@ ul li a img {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: Arial, Helvetica;
-	font-size: 1rem;
+	font-size: 0.7vw;
 }
 
 .menu li:hover,
@@ -803,7 +803,7 @@ p {
 
 .table-raspored {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+	grid-template-columns: repeat(2, 1fr);
 	width: 100%;
 	margin: 0 auto;
 	background-color: rgba(255, 255, 255, 0.7);
@@ -1097,7 +1097,7 @@ footer {
 	transition: transform 0.3s ease-in-out;
 	padding: 0.7vw;
 	height: auto;
-	width: 10vw;
+	width: 50vw;
 }
 
 .vozacomeni > h1{
@@ -1106,4 +1106,205 @@ footer {
 
 .vozacomeni img{
 	border-radius: 1vw;
+}
+
+.driver{
+	background-color: white;
+	border-radius: 1vw;
+	padding: 0.6vw;
+	width: auto;
+	position: relative;
+	margin: 1vw;
+	box-sizing: border-box;
+	padding: 15px;
+	z-index: 0;
+	border-right: 0.2vw solid #979797;
+	border-bottom: 0.2vw solid #979797;
+	border-radius: 1vw;
+	border-bottom-right-radius: 2vw;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+	transition: transform 0.3s ease-in-out;
+}
+
+.driver a{
+	text-decoration: underline;
+	font-weight: 500;
+	color: var(--bojaTeksta);
+}
+.driver a:hover{
+	color: var(--primary);
+}
+
+.driver > h1{
+	text-align: left;
+}
+.driver:hover{
+	transform: scale(1.1);
+	border-right: 0.2vw solid red;
+	border-bottom: 0.2vw solid red;
+}
+
+.mestoPoeni{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: -1vw;
+}
+.mestoPoeni > h1{
+	font-size: 3vw;
+	margin-top: 1vw;
+	margin-bottom: 0vw;
+}
+.poeni{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5vw;
+}
+.poeni h1{
+	font-size: 1.4vw;
+}
+
+.poeni img{
+	margin-top: -1.3vw;
+	width: 3.2vw;
+	height: 1vw;
+	border-radius: 0.3vw;
+}
+
+.ipZ{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: -0.85vw;
+}
+
+.imePrezime h1{
+	text-align: left;
+	font-size: 1vw;
+}
+
+#ime{
+	margin-top: -0.2vw;
+}
+
+#prezime{
+	margin-top: -1vw;
+}
+
+.ipZ img{
+	height: 2vw;
+	margin-left: 0.5vw;
+	aspect-ratio: 16/9;
+	border-radius: 0.4vw;
+	border: 1px solid black;
+}
+
+.driver > img{
+	width: 100%;
+	border-radius: 1vw;
+}
+.timLogo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.timLogo img{
+	border-radius: 0.5vw;
+	width: 7vw;
+	height: 3vw;
+}
+
+.vozacik{
+	display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    gap: 0.5vw;
+    padding: 1vw;
+}
+
+.top3vozaca{
+	margin-left: -10vw;
+	margin-right: -10vw;
+	margin-top: 7vw;
+	margin-bottom: 3vw;
+	height: 30vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.t3{
+	width: 15vw;
+}
+.mesto1{
+	margin-top: -5vw;
+}
+.mesto1blok{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -2vw;
+	border-top-right-radius: 1.5vw;
+	border-top-left-radius: 1.5vw;
+	width: 100%;
+	height: 30%;
+	background-color: rgb(211, 179, 0);
+}
+.mesto2blok{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 1.5vw;
+	border-top-left-radius: 1.5vw;
+	width: 100%;
+	height: 23.5%;
+	background-color: rgb(171, 171, 171);
+}
+.mesto2{
+	margin-top: -2vw;
+	margin-bottom: 0vw;
+}
+
+.m2{
+	margin-bottom: -1vw;
+}
+.mesto3blok{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -2vw;
+	border-top-right-radius: 1.5vw;
+	border-top-left-radius: 1.5vw;
+	width: 100%;
+	height: 18.5%;
+	background-color: #CD7F32;
+}
+
+.fa-ranking-star{
+	margin-bottom: -2vw;
+	font-size: 7vw;
+}
+
+.mesto3blok p{
+	font-size: 4vw;
+} 
+.mesto2blok p {
+	font-size: 5vw;
+
+}
+
+.mesto2blok p, .mesto3blok p{
+	margin-bottom: 3vw;
+	color: #2C2C2C;
+}
+
+.pod {
+	margin-left: -10vw;
+	margin-right: -10vw;
+	width: 150%;
+	height: 2vh;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	margin-top: -0.2vw;
+	margin-bottom: 10vh;
+	background-color: #2C2C2C;
 }
