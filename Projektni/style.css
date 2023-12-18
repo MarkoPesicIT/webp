@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
 :root {
@@ -113,10 +114,10 @@ ul li a img {
   }
   
   .submenu>li>a {
-	padding-top: 0.5vw;
+	padding-top: 1vw;
 	padding-left: 1vw;
 	padding-right: 1vw;
-	padding-bottom: 0.5vw;
+	padding-bottom: 1vw;
   }
   
   .submenu>li::after {
@@ -566,7 +567,7 @@ th {
 	color: #222222;
 }
 th p{
-	font-size: 0.6vw;
+	font-size: 0.9vw;
 }
 
 .vozac-slika {
@@ -575,7 +576,7 @@ th p{
 
 .vozac img {
 	width: 100%;
-	height: 40vh;
+	height: 45vh;
 	border-radius: 1vw;
 	transition: transform 0.3s ease-in-out;
 }
@@ -612,7 +613,7 @@ th p{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 20vw;
+	width: 15vw;
 	height: auto;
 	border-radius: 1vw;
 }
@@ -922,7 +923,7 @@ a {
 	margin-bottom: -0.7vw;
 }
 .eventpopup p {
-	font-size: 0.6vw;
+	font-size: 0.8vw;
 }
 .pobednik a:hover {
 	color: rgb(152, 152, 152);
@@ -1108,24 +1109,888 @@ footer {
 	border-radius: 1vw;
 }
 
+<<<<<<< HEAD
 .driver{
 	background-color: white;
 	border-radius: 1vw;
 	padding: 0.6vw;
 	width: auto;
+=======
+.toppart,
+.middlepart {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.middlepart img.country {
+    max-width: 50px;
+}
+
+.driverNumber,
+.driverImage {
+    margin: 10px;
+}
+
+.driverImage {
+    width: 100%; 
+    max-height: auto; 
+    margin: 10px;
+}
+
+
+
+Option 2: Or upload your CSS fileNo file chosen
+File encoding
+UTF-8
+Indentation level
+Tab delimited
+ 
+-Beautified CSS-
+ 
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+:root {
+	--primary: #b80e0e;
+	--bojaTeksta: rgb(81, 81, 81);
+	font-family: audiowide;
+}
+
+* {
+	color: #2c2c2c;
+}
+
+body {
+	margin: 0;
+	background-color: #e4e4e4;
+}
+
+.strana {
+	margin: 5vw 30vw;
+}
+
+header {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #b80e0e;
+	z-index: 100000;
+	top: 100%;
+	left: 0;
+}
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+ul li a img {
+	height: 14px;
+}
+
+.menu,
+.submenu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu>li {
+	background: #b80e0e;
+	float: left;
+	position: relative;
+	transform: skewX(-35deg);
+}
+
+.menu a {
+	display: block;
+	color: #e6e6e6;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, Helvetica;
+	font-size: 1rem;
+}
+
+.menu li:hover,
+.menu li:active {
+	background: #e74c3c;
+}
+
+.menu>li>a {
+	transform: skewX(35deg);
+	padding: 1em 2em;
+}
+
+/* Dropdown */
+.logoTimova {
+	width: 24px;
+	height: auto;
+	float: right;
+	padding-bottom: 1em;
+}
+
+.submenu {
+	position: absolute;
+	width: 220px;
+	height: 100px;
+	left: 70%;
+	margin-left: -100px;
+	transform: skewX(35deg);
+	transform-origin: left top;
+	z-index: 1000;
+}
+
+.submenu li {
+	background-color: #c03636;
+	position: relative;
+	overflow: hidden;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.7s ease transform, 0.7s ease box-shadow, 0.5s ease opacity, 0.5s ease visibility;
+}
+
+.submenu>li:nth-child(odd),
+.submenu>li:nth-child(even) {
+	opacity: 0;
+	/* Reset opacity for odd/even children */
+}
+
+.submenu>li>a {
+	padding-top: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-bottom: 1vw;
+}
+
+.submenu>li::after {
+	content: "";
+	position: absolute;
+	top: -125%;
+	height: 100%;
+	width: 100%;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.submenu>li:nth-child(odd) {
+	transform: skewX(-35deg) translateX(100px);
+}
+
+.submenu>li:nth-child(odd)>a {
+	transform: skewX(35deg);
+}
+
+.submenu>li:nth-child(odd)::after {
+	right: -50%;
+	transform: skewX(-35deg) rotate(3deg);
+}
+
+.submenu>li:nth-child(even) {
+	transform: skewX(35deg) translateX(-100px);
+}
+
+.submenu>li:nth-child(even)>a {
+	transform: skewX(-35deg);
+}
+
+.submenu>li:nth-child(even)::after {
+	left: -50%;
+	transform: skewX(35deg) rotate(3deg);
+}
+
+.submenu,
+.submenu li {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.submenu li {
+	transition: 0.5s ease transform, 0.7s ease box-shadow, 0.7s ease opacity, 0.7s ease visibility;
+}
+
+.menu>li:hover .submenu,
+.menu>li:hover .submenu li {
+	opacity: 1;
+	visibility: visible;
+}
+
+.menu>li:hover .submenu li:nth-child(even) {
+	transform: skewX(35deg) translateX(35px);
+	opacity: 1;
+}
+
+.menu>li:hover .submenu li:nth-child(odd) {
+	transform: skewX(-35deg) translateX(-35px);
+	opacity: 1;
+}
+
+.submenu>li:nth-child(2) {
+	transition-delay: 0ms;
+}
+
+.submenu>li:nth-child(3) {
+	transition-delay: 100ms;
+}
+
+.submenu>li:nth-child(4) {
+	transition-delay: 150ms;
+}
+
+.submenu>li:nth-child(5) {
+	transition-delay: 200ms;
+}
+
+.submenu>li:nth-child(6) {
+	transition-delay: 250ms;
+}
+
+.submenu>li:nth-child(7) {
+	transition-delay: 300ms;
+}
+
+.submenu>li:nth-child(8) {
+	transition-delay: 350ms;
+}
+
+.submenu>li:nth-child(9) {
+	transition-delay: 400ms;
+}
+
+.submenu>li:nth-child(10) {
+	transition-delay: 450ms;
+}
+
+.submenu>li:nth-child(11) {
+	transition-delay: 500ms;
+}
+
+.submenu>li:nth-child(12) {
+	transition-delay: 550ms;
+}
+
+.submenu>li:nth-child(13) {
+	transition-delay: 600ms;
+}
+
+.submenu>li:nth-child(14) {
+	transition-delay: 650ms;
+}
+
+.submenu>li:nth-child(15) {
+	transition-delay: 700ms;
+}
+
+.submenu>li:nth-child(16) {
+	transition-delay: 750ms;
+}
+
+.submenu>li:nth-child(17) {
+	transition-delay: 800ms;
+}
+
+.submenu>li:nth-child(18) {
+	transition-delay: 850ms;
+}
+
+.submenu>li:nth-child(19) {
+	transition-delay: 900ms;
+}
+
+.submenu>li:nth-child(20) {
+	transition-delay: 950ms;
+}
+
+
+.stajef1 {
+	margin-bottom: 5em;
+	box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
+	border-radius: 2em;
+	padding: 1em;
+	background-color: rgb(236, 236, 236);
+}
+
+.stajef1 h2 {
+	font-size: 1rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	margin-top: 2vh;
+	text-decoration: underline;
+}
+
+#uvod {
+	font-size: 1rem;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-top: 1vw;
+	margin-bottom: 3vw;
+	font-weight: 450;
+}
+
+.stajef1 p {
+	font-size: 0.8em;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-top: 1vw;
+	margin-bottom: 3vw;
+	font-weight: 400;
+	padding: 1vw;
+	border-radius: 1em;
+	box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.image-container {
+	aspect-ratio: 16/9;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	border: 0.3em solid #b80e0e;
+	margin-bottom: 2em;
+	box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
+	border-radius: 2em;
+}
+
+.slider-container {
+	width: 100%;
+	aspect-ratio: 16/9;
+	display: flex;
+	overflow: hidden;
+}
+
+.slider-container:has(.img.active) .img:not(.active) {
+	filter: grayscale(100%)
+}
+
+.slider-container img {
+	height: 100%;
+	width: calc(100% / 5);
+	object-fit: cover;
+	overflow: hidden;
+	border-left: 2px solid #b80e0e;
+	border-right: 2px solid #b80e0e;
+	transition: all 0.7s cubic-bezier(0.42, 0, 0, 0);
+	cursor: pointer;
+}
+
+.slider-container img.active {
+	width: 400%;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2em;
+	box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
+	border-radius: 2em;
+	margin-top: 5em;
+}
+
+.grid-item {
+	padding: 3em;
+	background-color: rgba(255, 255, 255, 0.4);
+	text-align: center;
+	border-radius: 2em;
+}
+
+.slikatekst {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.slikatekst img {
+	aspect-ratio: 16/9;
+	border-radius: 1em;
+	width: 50%;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	max-width: 15vw;
+}
+
+.slikatekst p {
+	font-size: 0.7rem;
+	margin: 1.5vw;
+}
+
+.read-more {
+	float: right;
+	margin: 2vw auto;
+	cursor: pointer;
+	border: 0;
+	padding: 0.5em;
+	background-color: rgba(255, 0, 0, 0.2);
+	border-radius: 0.5em;
+}
+
+.hidden {
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+	transition: opacity 0.5s ease, height 1s ease;
+}
+
+.visible {
+	opacity: 1;
+	height: auto;
+}
+
+
+.timovi {
+	padding: 1vw;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1vw;
+}
+
+.timovipredgovor>p {
+	font-size: 1vw;
+	padding: 3em;
+	margin-bottom: 5em;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
+	border-radius: 2em;
+}
+
+.team-container {
+	position: relative;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+	padding: 1vw;
+	text-align: center;
+	border-bottom: 0.2vw solid rgb(193, 193, 193);
+	border-right: 0.2vw solid rgb(193, 193, 193);
+	border-radius: 1vw;
+	border-bottom-right-radius: 2vw;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	aspect-ratio: 1/1;
+	width: 85%;
+	z-index: 1;
+	transition: transform 0.7s ease;
+}
+
+.naslovtimovi {
+	z-index: -1;
+	box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 1vw;
+	border-radius: 2em;
+}
+
+.team-container a {
+	text-decoration: none;
+}
+
+.team-container h1 {
+	z-index: -1;
+	font-size: 1vw;
+}
+
+.team-container img {
+	width: 33%;
+	max-width: 100%;
+	align-self: center;
+	border-radius: 1vw;
+	z-index: -1;
+}
+
+.vozacitimovi {
+	height: 13vh;
+	width: auto;
+}
+
+.f1boliddiv {
+	display: flex;
+	margin-top: 1vw;
+	align-items: center;
+	border-radius: 1vw;
+}
+
+.vozac-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.vozac-logo img {
+	margin: 0.2em;
+}
+
+#f1bolid {
+	width: 7vw;
+	height: auto;
+}
+
+.blok {
+	z-index: -1;
+	min-width: 1vw;
+	border-top-left-radius: 100%;
+	border-bottom-left-radius: 100%;
+	width: 0;
+	height: 1vw;
+	border-bottom-right-radius: 50%;
+	border-top-right-radius: 50%;
+	transition: width 0.5s ease-in-out;
+	box-shadow: inset -20px 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.ferrari {
+	background-color: #e31919;
+}
+
+.redbull {
+	background-color: #03166d;
+}
+
+.mercedes {
+	background-color: silver;
+}
+
+.mclaren {
+	background-color: #fc8000;
+}
+
+.astonmartin {
+	background-color: #00655e;
+}
+
+.alpine {
+	background-color: rgba(0, 0, 255, 0.5);
+}
+
+.williams {
+	background-color: #0e17c4;
+}
+
+.alphatauri {
+	background-color: silver;
+}
+
+.alfaromeo {
+	background-color: #AC3158;
+}
+
+.haasf1 {
+	background-color: #ff7a7a;
+}
+
+.team-container:hover {
+	transform: scale(1.1);
+	transition-delay: 0.2s;
+	border-bottom: 0.3vw solid rgb(255, 0, 0);
+	border-right: 0.3vw solid rgb(255, 0, 0);
+}
+
+.team-container:hover .blok {
+	width: 180px;
+}
+
+.table-container {
+	width: 70%;
+	margin: 5em auto;
+	background-color: #fff;
+	border-radius: 2vw;
+	overflow: hidden;
+	box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
+	padding: 2vw;
+	padding-right: 1vw;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 0;
+}
+
+th,
+td {
+	text-align: left;
+}
+
+th {
+	background-color: #ffffff;
+	color: #222222;
+}
+
+th p {
+	font-size: 0.9vw;
+}
+
+.vozac-slika {
+	background-color: #222222;
+}
+
+.vozac img {
+	width: 100%;
+	height: 45vh;
+	border-radius: 1vw;
+	transition: transform 0.3s ease-in-out;
+}
+
+.vozac h1 {
+	font-size: 1.5vw;
+	text-align: left;
+}
+
+.vozac {
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+	border-radius: 1vw;
+	transition: transform 0.3s ease-in-out;
+	padding: 0.7vw;
+	height: auto;
+	width: 15vw;
+}
+
+.brojVozaca {
+	color: var(--bojaTeksta);
+	font-size: 2vw;
+}
+
+.vozac:hover {
+	transform: scale(1.05);
+}
+
+.table-container a {
+	text-decoration: none;
+	color: #222222;
+}
+
+.team-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15vw;
+	height: auto;
+	border-radius: 1vw;
+}
+
+.table-container h2 {
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+#profile-section,
+#year-section {
+	background-color: #fff;
+	padding: 20px;
+	margin-top: 1vw;
+	border-radius: 1vw;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+h1 {
+	text-align: center;
+	color: #cc0000;
+	color: var(--bojaTeksta);
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: 1vw;
+	color: var(--bojaTeksta);
+	line-height: 1.6;
+}
+
+#year-section h2 {
+	font-size: 1.5vw;
+	margin-top: 0;
+	color: var(--bojaTeksta);
+	font-weight: bolder;
+}
+
+.year-entry {
+	margin-bottom: 20px;
+}
+
+
+.novosti {
+	margin-top: 5em;
+	border-radius: 2em;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 3vw;
+	box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
+	background-color: rgba(255, 255, 255, 0.4)
+}
+
+.novosti h1 {
+	text-align: center;
+	font-size: 2vw;
+	font-family: Courier New, monospace;
+	margin: 1vw;
+}
+
+.novosti-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(10vw, 2fr));
+	gap: 3.5vw;
+	margin: 2vw auto;
+	margin-right: 1.5vw;
+}
+
+.novosti-card p {
+	color: var(--bojaTeksta);
+	font-weight: bolder;
+	font-size: 0.7vw;
+	margin-top: 1vw;
+}
+
+.novosti-card {
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+	overflow: hidden;
+	width: 100%;
+	padding: 1vw;
+	border-radius: 2em;
+	box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.novosti-card img {
+	border-radius: 1em;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	height: auto;
+}
+
+.novosti-card:hover {
+	transform: scale(1.1);
+}
+
+.novosti-card:hover p {
+	background: rgba(255, 0, 0, 0.25);
+	border-radius: 1em;
+	color: var(--bojaTeksta);
+	margin-top: 1vw;
+	padding: 1vw;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	animation: expandIn 0.5s ease-in-out;
+}
+
+@keyframes expandIn {
+	from {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.popup-content-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	border-radius: 1vw;
+}
+
+.popup-content {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 20px;
+	text-align: center;
+	max-width: 80vw;
+	max-height: 80vh;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+.close {
+	position: absolute;
+	top: 0.9vw;
+	right: 1vw;
+	font-size: 2.5vw;
+	cursor: pointer;
+}
+
+.popup-content h2 {
+	font-size: 1.5vw;
+	color: var(--bojaTeksta);
+	margin-bottom: 10px;
+}
+
+.popup-content img {
+	max-width: 100%;
+	border-radius: 2vw;
+	height: auto;
+}
+
+.popup-content p {
+	margin-bottom: 2vw;
+	color: var(--bojaTeksta);
+	font-size: 1vw;
+}
+
+.popup.closing {
+	animation: shrinkOut 0.5s ease-in-out;
+}
+
+@keyframes shrinkOut {
+	from {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	to {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+}
+
+.table-raspored {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 2vw;
+	overflow: visible;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	padding: 1vw;
+}
+
+.event {
+>>>>>>> fb43ddeeb504e6886df243aa3003449349a1f365
 	position: relative;
 	margin: 1vw;
 	box-sizing: border-box;
 	padding: 15px;
 	z-index: 0;
+<<<<<<< HEAD
 	border-right: 0.2vw solid #979797;
 	border-bottom: 0.2vw solid #979797;
+=======
+	border-right: 0.2vw solid #c3c3c3;
+	border-bottom: 0.2vw solid #b8b8b8;
+>>>>>>> fb43ddeeb504e6886df243aa3003449349a1f365
 	border-radius: 1vw;
 	border-bottom-right-radius: 2vw;
 	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 	transition: transform 0.3s ease-in-out;
 }
 
+<<<<<<< HEAD
 .driver a{
 	text-decoration: underline;
 	font-weight: 500;
@@ -1194,11 +2059,29 @@ footer {
 .ipZ img{
 	height: 2vw;
 	margin-left: 0.5vw;
+=======
+.event h5 {
+	margin-top: -0.5vw;
+	margin-bottom: 0.7vw;
+	font-size: 0.7vw;
+}
+
+.gornjideo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gornjideo>img {
+	height: 2.5vw;
+>>>>>>> fb43ddeeb504e6886df243aa3003449349a1f365
 	aspect-ratio: 16/9;
 	border-radius: 0.4vw;
 	border: 1px solid black;
 }
 
+<<<<<<< HEAD
 .driver > img{
 	width: 100%;
 	border-radius: 1vw;
@@ -1307,4 +2190,305 @@ footer {
 	margin-top: -0.2vw;
 	margin-bottom: 10vh;
 	background-color: #2C2C2C;
+=======
+#rasporednaslov {
+	margin: 3vw;
+	font-size: 3vw;
+	text-align: center;
+}
+
+.event:hover {
+	transform: scale(1.1);
+	border-right: 0.3vw solid red;
+	border-bottom: 0.3vw solid red;
+}
+
+.event h4 {
+	color: var(--bojaTeksta);
+	font-size: 1vw;
+	margin-top: 0.6vw;
+	margin-left: 0.6vw;
+	margin-bottom: 5px;
+}
+
+.event h3 {
+	margin-left: 0.6vw;
+	margin-top: 0.6vw;
+	font-size: 1vw;
+	color: var(--bojaTeksta);
+	margin-bottom: 10px;
+}
+
+.event h2 {
+	color: #007bff;
+	font-size: 1vw;
+	color: var(--bojaTeksta);
+	text-align: left;
+}
+
+.staza {
+	width: 100%;
+	height: auto;
+	border-radius: 0.5vw;
+	margin-bottom: -0.3vw;
+	border-bottom-right-radius: 1.5vw;
+	border: 1px solid black;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.eventpopup {
+	position: absolute;
+	top: 0;
+	width: 95%;
+	background-color: rgb(249, 249, 249);
+	color: black;
+	padding: 1vw;
+	border-top-right-radius: 1vw;
+	border-bottom-right-radius: 1vw;
+	border-bottom-left-radius: 2vw;
+	border-top-left-radius: 1vw;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0.3s;
+}
+
+a {
+	text-decoration: none;
+}
+
+.fa-solid {
+	margin-right: 0.5vw;
+}
+
+.pobednik {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: -0.7vw;
+}
+
+.eventpopup p {
+	font-size: 0.8vw;
+}
+
+.pobednik a:hover {
+	color: rgb(152, 152, 152);
+}
+
+.levo {
+	left: -115%;
+	border-right: 0.3vw solid red;
+	border-bottom: 0.3vw solid red;
+}
+
+.desno {
+	right: -117%;
+	border-bottom-left-radius: 1vw;
+	border-bottom-right-radius: 2vw;
+	border-left: 0.3vw solid red;
+	border-bottom: 0.3vw solid red;
+}
+
+.event:hover .eventpopup {
+	opacity: 1;
+	visibility: visible;
+}
+
+.viseoPobedniku {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+	padding: 1vw;
+	transition: opacity 0.5s, visibility 0.5s;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p:hover+.viseoPobedniku {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.viseoPobedniku p {
+	margin-top: -0.1vw;
+}
+
+.desnoP {
+	top: 14%;
+	left: 70%;
+	border-left: 0.3vw solid red;
+	border-top: 0.3vw solid red;
+	border-top-right-radius: 1vw;
+	border-bottom-right-radius: 1vw;
+	border-bottom-left-radius: 2vw;
+	border-top-left-radius: 1vw;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+	min-width: 10vw;
+}
+
+.levoP {
+	top: 14%;
+	left: 55%;
+	border-left: 0.3vw solid red;
+	border-top: 0.3vw solid red;
+	border-top-right-radius: 1vw;
+	border-bottom-right-radius: 1vw;
+	border-bottom-left-radius: 2vw;
+	border-top-left-radius: 1vw;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+	min-width: 10vw;
+}
+
+.drugoD {
+	top: 25%;
+	left: 70%;
+}
+
+.treceD {
+	top: 35%;
+	left: 70%;
+}
+
+.drugoL {
+	top: 25%;
+	left: 70%;
+}
+
+.treceL {
+	top: 35%;
+	left: 70%;
+}
+
+.viseoPobedniku table {
+	width: 100%;
+}
+
+.najbrziKrugInfo {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+	padding: 1vw;
+	transition: opacity 0.5s, visibility 0.5s;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#najbrziKrug:hover {
+	color: rgb(152, 152, 152);
+}
+
+p:hover+.najbrziKrugInfo {
+	opacity: 1;
+	visibility: visible;
+}
+
+.krug {
+	top: 75%;
+	left: 60%;
+}
+
+.krug p {
+	margin-top: -0.1vw;
+}
+
+footer {
+	background-color: var(--bojaTeksta);
+	color: #fff;
+	padding: 20px 0;
+	box-shadow: 0 0px 80px black;
+}
+
+.footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-section {
+	flex: 1 1 300px;
+	margin: 10px;
+	text-align: center;
+}
+
+.footer-section a {
+	color: #fff;
+	font-size: 1.2em;
+	transition: color 0.3s ease;
+}
+
+.footer-section h2 {
+	font-size: 1.5em;
+	color: #fff;
+	margin-bottom: 10px;
+	font-weight: 100;
+}
+
+.footer-section p {
+	color: #fff;
+	font-size: 0.9em;
+}
+
+.footer-social {
+	margin-top: 15px;
+}
+
+.footer-social a {
+	display: inline-block;
+	margin: 0 10px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+	color: var(--primary);
+}
+
+.footer-social a:hover {
+	color: var(--primary);
+}
+
+.vozacomeni {
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+	border-radius: 1vw;
+	transition: transform 0.3s ease-in-out;
+	padding: 0.7vw;
+	height: auto;
+	width: 10vw;
+}
+
+.vozacomeni>h1 {
+	font-size: 1.4vw;
+}
+
+.vozacomeni img {
+	border-radius: 1vw;
+}
+
+.toppart,
+.middlepart {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.middlepart img.country {
+	max-width: 50px;
+}
+
+.driverNumber,
+.driverImage {
+	margin: 10px;
+}
+
+.driverImage {
+	width: 100%;
+	max-height: auto;
+	margin: 10px;
+>>>>>>> fb43ddeeb504e6886df243aa3003449349a1f365
 }
