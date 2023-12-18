@@ -113,10 +113,10 @@ ul li a img {
   }
   
   .submenu>li>a {
-	padding-top: 0.5vw;
+	padding-top: 1vw;
 	padding-left: 1vw;
 	padding-right: 1vw;
-	padding-bottom: 0.5vw;
+	padding-bottom: 1vw;
   }
   
   .submenu>li::after {
@@ -566,7 +566,7 @@ th {
 	color: #222222;
 }
 th p{
-	font-size: 0.6vw;
+	font-size: 0.9vw;
 }
 
 .vozac-slika {
@@ -575,7 +575,7 @@ th p{
 
 .vozac img {
 	width: 100%;
-	height: 40vh;
+	height: 45vh;
 	border-radius: 1vw;
 	transition: transform 0.3s ease-in-out;
 }
@@ -612,7 +612,7 @@ th p{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 20vw;
+	width: 15vw;
 	height: auto;
 	border-radius: 1vw;
 }
@@ -922,7 +922,7 @@ a {
 	margin-bottom: -0.7vw;
 }
 .eventpopup p {
-	font-size: 0.6vw;
+	font-size: 0.8vw;
 }
 .pobednik a:hover {
 	color: rgb(152, 152, 152);
@@ -1107,3 +1107,27 @@ footer {
 .vozacomeni img{
 	border-radius: 1vw;
 }
+
+.toppart,
+.middlepart {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.middlepart img.country {
+    max-width: 50px;
+}
+
+.driverNumber,
+.driverImage {
+    margin: 10px;
+}
+
+.driverImage {
+    width: 100%; /* Set your desired maximum width */
+    max-height: auto; /* Set your desired maximum height */
+    margin: 10px;
+}
+
+
