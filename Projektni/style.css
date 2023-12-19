@@ -65,8 +65,7 @@ ul li a img {
 	color: #e6e6e6;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-family: Arial, Helvetica;
-	font-size: 1vw;
+	font-size: 1.2vw;
 }
 
 .menu li:hover,
@@ -537,7 +536,7 @@ ul li a img {
 }
 
 .team-container:hover .blok {
-	width: 180px;
+	width: 100px;
 }
 
 .table-container {
